@@ -1,0 +1,73 @@
+* {
+    font-family: 'Oswald',
+    sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(131, 131, 131, 0.7), rgba(131, 131, 131, 0.7)), url(clock.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    padding-top: 30px;
+    position: absolute;
+    top: 0px;
+}
+
+.header-text {
+    font-size: 300%;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+}
+
+.clock-face {
+    width: 100%;
+    height: 100%;
+    border: solid 3px rgba(201, 0, 0, 0.685);
+    border-radius: 50%;
+}
+
+.hand {
+    transform: rotate(90deg);/*puts in vertical orientation*/
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: 100%;
+    height: 6px;
+    border-radius: 4px;
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.23, 1.89);
+    
+}
+
+.second-hand {
+    height: 2px;
+    border-radius: 1px;
+}
+
+.minute-hand {
+    height: 4px;
+    border-radius: 2px;
+}
+
+.hour-hand {
+    height: 6px;
+    border-radius: 3px;
+}
